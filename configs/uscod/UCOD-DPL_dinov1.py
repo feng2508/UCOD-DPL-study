@@ -1,3 +1,13 @@
+import os
+from pathlib import Path
+
+_DEFAULT_CACHE_DIR = (
+    '/kaggle/working/UCOD-DPL/cache'
+    if Path('/kaggle/working').exists()
+    else './datasets/cache'
+)
+_CACHE_DIR = os.environ.get('UCOD_CACHE_DIR', _DEFAULT_CACHE_DIR)
+
 cfg = dict(
     _BASE_ = [
         '../base/accelerate.py',
@@ -34,7 +44,7 @@ cfg = dict(
         feature_size=68,
     ),
     dataset_cfg=dict(
-        cache_dir='./datasets/cache',
+        cache_dir=_CACHE_DIR,
         val_loader_cfg = dict(
             batch_size=1,
             num_workers=0,

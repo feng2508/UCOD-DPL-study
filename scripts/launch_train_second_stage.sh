@@ -45,7 +45,7 @@ export TF_CPP_MIN_LOG_LEVEL=3
 export PYTHONPATH=./
 export NCCL_P2P_DISABLE=1
 export NCCL_IB_DISABLE=1
-export HF_ENDPOINT='https://hf-mirror.com'
+export HF_ENDPOINT="${HF_ENDPOINT:-https://huggingface.co}"
 CMD="accelerate launch $DISTRIBUTED_ARGS scripts/LTtrain.py $OPTS"
 
 echo $CMD

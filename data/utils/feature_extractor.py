@@ -1,4 +1,4 @@
-import os; os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+import os
 import transformers
 import timm
 import torch
@@ -57,4 +57,3 @@ class backbone(nn.Module):
             H = W = int((L-1)**0.5)
             self.key = self.key[:,1:,:].reshape(B, H, W, C).permute(0,3,1,2)
         return outputs, self.key   
-
