@@ -1,7 +1,7 @@
 cfg = dict(
     _BASE_ = [
-        '../__base__/accelerate.py',
-        '../__base__/newbase.py',
+        '../base/accelerate.py',
+        '../base/newbase.py',
         '../dataset/cod4040.py'
     ],
     exp_name = 'UCOD-DPL_dinov1',
