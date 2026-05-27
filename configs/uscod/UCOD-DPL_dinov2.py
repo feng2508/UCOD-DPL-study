@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 _DEFAULT_CACHE_DIR = (
-    '/kaggle/working/UCOD-DPL/cache'
+    '/kaggle/temp/UCOD-DPL/cache'
     if Path('/kaggle/working').exists()
     else './datasets/cache'
 )
