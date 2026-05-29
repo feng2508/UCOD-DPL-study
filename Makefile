@@ -14,7 +14,8 @@ zip-kaggle:
 		-x "*/__pycache__/*" \
 		-x ".DS_Store" \
 		-x "*/.DS_Store" \
-		-x "work_dir/*"
+		-x "work_dir/*" \
+		-x "results/*"
 
 zip-datasets:
 	rm -f $(DATASETS_ZIP_NAME)
