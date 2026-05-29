@@ -1,5 +1,7 @@
+# Project-related files
 /datasets
 /results
+/weights
 *.zip
 # Byte-compiled / optimized / DLL files
 __pycache__/
