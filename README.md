@@ -169,10 +169,18 @@ Paper-reading and method-understanding notes are kept in:
 docs/
 ```
 
+Current notes:
+
+```text
+docs/ucod-dp-reading-note.md
+docs/ucod-dpl-code-map.md
+```
+
 The notes are intended to record:
 
 - the problem the paper solves
 - the main method idea
+- paper concepts mapped to implementation files and functions
 - evidence from tables and figures
 - ablation limitations
 - failure modes found through local evaluation
